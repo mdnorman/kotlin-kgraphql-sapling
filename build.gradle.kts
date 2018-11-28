@@ -30,6 +30,7 @@ dependencies {
   compile("io.ktor:ktor-jackson:$ktorVersion")
   compile("io.ktor:ktor-metrics:$ktorVersion")
   compile("com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.9.+")
+  compile("com.github.pgutkowski:kgraphql:0.3.+")
   implementation(kotlin("stdlib-jdk8", kotlinVersion))
   implementation(kotlin("reflect", kotlinVersion))
   implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.0.+")
