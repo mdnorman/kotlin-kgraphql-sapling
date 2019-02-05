@@ -8,6 +8,3 @@
  */
 
 rootProject.name = 'kotlin-kgraphql-sapling'
-
-enableFeaturePreview('STABLE_PUBLISHING')
-
