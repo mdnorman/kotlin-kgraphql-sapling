@@ -35,7 +35,7 @@ repositories {
 dependencies {
   implementation("com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.9.0")
   implementation("com.github.pgutkowski:kgraphql:0.3.0")
-  implementation("io.github.microutils:kotlin-logging:1.6.0")
+  implementation("io.github.microutils:kotlin-logging:2.1.0")
   implementation("io.ktor:ktor-auth:$ktorVersion")
   implementation("io.ktor:ktor-auth-jwt:$ktorVersion")
   implementation("io.ktor:ktor-jackson:$ktorVersion")
