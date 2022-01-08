@@ -13,13 +13,13 @@ version = "0.0.1"
 
 val applicationClassName = "CHANGEME"
 
-val kotlinVersion = "1.3.61"
-val ktorVersion = "1.6.5"
-val junitVersion = "5.8.1"
+val kotlinVersion = "1.6.0"
+val ktorVersion = "1.6.7"
+val junitVersion = "5.8.2"
 
 plugins {
-  kotlin("jvm") version "1.6.0"
-  id("org.jetbrains.dokka") version "1.6.0"
+  kotlin("jvm") version "1.6.10"
+  id("org.jetbrains.dokka") version "1.6.10"
   java
   application
   id("com.github.johnrengelman.shadow") version "4.0.3"
@@ -28,20 +28,20 @@ plugins {
 
 repositories {
   mavenLocal()
-  maven("https://kotlin.bintray.com/ktor")
   mavenCentral()
+  maven("https://kotlin.bintray.com/ktor")
 }
 
 dependencies {
-  implementation("com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.13.0")
+  implementation("com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.13.1")
   implementation("com.apurebase:kgraphql:0.17.14")
-  implementation("io.github.microutils:kotlin-logging:2.1.0")
+  implementation("io.github.microutils:kotlin-logging:2.1.21")
   implementation("io.ktor:ktor-auth:$ktorVersion")
   implementation("io.ktor:ktor-auth-jwt:$ktorVersion")
   implementation("io.ktor:ktor-jackson:$ktorVersion")
   implementation("io.ktor:ktor-metrics:$ktorVersion")
   implementation("io.ktor:ktor-server-netty:$ktorVersion")
-  implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.2")
+  implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.0")
   implementation("org.slf4j:slf4j-simple:1.7.32")
   implementation(kotlin("reflect", kotlinVersion))
   implementation(kotlin("stdlib-jdk8", kotlinVersion))
@@ -73,7 +73,7 @@ val sourceJar by tasks.creating(Jar::class) {
 
 tasks.withType<KotlinCompile> {
   kotlinOptions {
-    jvmTarget = "1.8"
+    jvmTarget = "1.17"
   }
 }
 
