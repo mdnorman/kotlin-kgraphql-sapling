@@ -14,12 +14,12 @@ version = "0.0.1"
 val applicationClassName = "CHANGEME"
 
 val kotlinVersion = "1.6.0"
-val ktorVersion = "1.6.7"
+val ktorVersion = "1.6.8"
 val junitVersion = "5.8.2"
 
 plugins {
-  kotlin("jvm") version "1.6.10"
-  id("org.jetbrains.dokka") version "1.6.10"
+  kotlin("jvm") version "1.7.0"
+  id("org.jetbrains.dokka") version "1.7.0"
   java
   application
   id("com.github.johnrengelman.shadow") version "4.0.3"
@@ -33,16 +33,16 @@ repositories {
 }
 
 dependencies {
-  implementation("com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.13.1")
+  implementation("com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.13.3")
   implementation("com.apurebase:kgraphql:0.17.14")
-  implementation("io.github.microutils:kotlin-logging:2.1.21")
+  implementation("io.github.microutils:kotlin-logging:2.1.23")
   implementation("io.ktor:ktor-auth:$ktorVersion")
   implementation("io.ktor:ktor-auth-jwt:$ktorVersion")
   implementation("io.ktor:ktor-jackson:$ktorVersion")
   implementation("io.ktor:ktor-metrics:$ktorVersion")
   implementation("io.ktor:ktor-server-netty:$ktorVersion")
-  implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.0")
-  implementation("org.slf4j:slf4j-simple:1.7.32")
+  implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.3")
+  implementation("org.slf4j:slf4j-simple:1.7.36")
   implementation(kotlin("reflect", kotlinVersion))
   implementation(kotlin("stdlib-jdk8", kotlinVersion))
   testImplementation("com.natpryce:hamkrest:1.8.0.1")
